@@ -11,7 +11,7 @@ public class MoveBack : MonoBehaviour
         Moving();
     }
 
-    protected void Moving()
+    protected virtual void Moving() // ABSTRACTION
     {
         transform.Translate(Vector3.back * speed * Time.deltaTime, Space.World);
     }

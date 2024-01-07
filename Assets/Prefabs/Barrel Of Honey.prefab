@@ -12,13 +12,12 @@ GameObject:
   - component: {fileID: 1458960049581557234}
   - component: {fileID: 598768686253629630}
   - component: {fileID: 8121207518449155268}
-  - component: {fileID: 3917635152279271823}
   - component: {fileID: 5282630174254086998}
   - component: {fileID: 8058768588283223841}
-  - component: {fileID: 4875194307517341260}
+  - component: {fileID: 8652295509591187116}
   m_Layer: 0
   m_Name: Barrel Of Honey
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -2.2160602, y: 11.941, z: 69.15513}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,19 +109,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 270efc4fb3c7ef74cb77f88b77cefaa1, type: 3}
---- !u!114 &3917635152279271823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7917630490391532481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ae60bf3d8b93c479aaa40aa5c6e347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
 --- !u!65 &5282630174254086998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,7 +157,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4875194307517341260
+--- !u!114 &8652295509591187116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7917630490391532481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ae60bf3d8b93c479aaa40aa5c6e347, type: 3}
+  m_Script: {fileID: 11500000, guid: cf7dddd9152dd4c4c94728f5847e0d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 300

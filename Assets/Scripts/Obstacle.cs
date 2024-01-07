@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MoveBack
+public class Obstacle : MoveBack // INHERITANCE
 {
     private float zBound = -420;
     private float yBound = -10;
+    private GameManager gameManager;
 
     void Start()
     {
-        
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -26,4 +27,11 @@ public class Obstacle : MoveBack
         }
     }
 
+    protected override void Moving()  // POLYMORPHISM
+    {
+        if (gameManager.isGameActive)
+        {
+            base.Moving();
+        }
+    }
 }

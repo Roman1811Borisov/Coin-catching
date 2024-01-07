@@ -92,13 +92,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689142802653582116}
-  - component: {fileID: 6462757672671438500}
   - component: {fileID: 3044345437736279131}
   - component: {fileID: 2211154782532041528}
-  - component: {fileID: 7769319983435209401}
+  - component: {fileID: -1518829695725367371}
   m_Layer: 0
   m_Name: Wooden Fence
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,19 +118,6 @@ Transform:
   - {fileID: 648608493572094070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &6462757672671438500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3626413414984679486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ae60bf3d8b93c479aaa40aa5c6e347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
 --- !u!65 &3044345437736279131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -151,8 +137,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.0516438, y: 1.958432, z: 0.53575134}
+  m_Center: {x: 0.0074880123, y: 0.9584323, z: 0.022460938}
 --- !u!54 &2211154782532041528
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -180,7 +166,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7769319983435209401
+--- !u!114 &-1518829695725367371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,7 +175,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3626413414984679486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ae60bf3d8b93c479aaa40aa5c6e347, type: 3}
+  m_Script: {fileID: 11500000, guid: cf7dddd9152dd4c4c94728f5847e0d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 300

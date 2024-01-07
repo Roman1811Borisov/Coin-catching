@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         Instantiate(obstaclesPrefabs[randomObstacleNumber], CreateRandomSpawnPosition(), obstaclesPrefabs[randomObstacleNumber].transform.rotation); //ABSTRACTION  
     }
 
-    Vector3 CreateRandomSpawnPosition()
+    Vector3 CreateRandomSpawnPosition() // ABSTRACTION
     {
         return new Vector3(Random.Range(minSpawnPositionX, maxSpawnPositionX), SpawnPositionY, SpawnPositionZ);
     }
