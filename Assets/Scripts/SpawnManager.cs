@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float startDelay = 2;
-    private float repeatRate = 1;
     private float minSpawnPositionX = -10;
     private float maxSpawnPositionX = 10;
     private float SpawnPositionY = 1;
     private float SpawnPositionZ = 180;
+    [SerializeField] private float startDelay = 2;
+    [SerializeField] private float repeatRate = 1;
     [SerializeField] private GameObject[] obstaclesPrefabs;
 
     void Start()

@@ -11,7 +11,7 @@ public class Ground : MoveBack
     private void Start()
     {
         startPosition = transform.position;
-        repeatWidth = transform.lossyScale.x / 2;
+        repeatWidth = transform.lossyScale.z / 2;
     }
 
     private void Update()

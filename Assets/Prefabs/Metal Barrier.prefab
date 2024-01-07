@@ -92,9 +92,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1765107158552890039}
-  - component: {fileID: 1796876510970067130}
   - component: {fileID: 8273176980523616446}
   - component: {fileID: 1641770474828730119}
+  - component: {fileID: -3247148182695333667}
   m_Layer: 0
   m_Name: Metal Barrier
   m_TagString: Untagged
@@ -118,19 +118,6 @@ Transform:
   - {fileID: 6249024669805338419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1796876510970067130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5602966808951735560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ae60bf3d8b93c479aaa40aa5c6e347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 100
 --- !u!65 &8273176980523616446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -179,3 +166,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3247148182695333667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602966808951735560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7dddd9152dd4c4c94728f5847e0d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
