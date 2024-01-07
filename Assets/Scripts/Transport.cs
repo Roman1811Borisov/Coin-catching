@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Transport : MonoBehaviour
 {
-    [SerializeField] private float zBound;
+    [SerializeField] private float xBound;
     [SerializeField] protected float horizontalInput;
     [SerializeField] protected float movingSpeed;
+    [SerializeField] protected float rotatingSpeed;
 
     void Start()
     {
@@ -22,14 +23,15 @@ public class Transport : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * movingSpeed * horizontalInput * Time.deltaTime);
+        transform.Rotate(Vector3.right, horizontalInput * rotatingSpeed * Time.deltaTime);
 
-        if (transform.position.z > zBound)
+        if (transform.position.x > xBound)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+            transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
         }
-        if (transform.position.z < -zBound)
+        if (transform.position.x < -xBound)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
+            transform.position = new Vector3(-xBound, transform.position.y, transform.position.z);
         }
     }
 }

@@ -6,11 +6,12 @@ using UnityEngine;
 public class Ground : MoveBack
 {
     private Vector3 startPosition;
-    private float repeatWidth = 30;
+    private float repeatWidth;
 
     private void Start()
     {
         startPosition = transform.position;
+        repeatWidth = transform.lossyScale.x / 2;
     }
 
     private void Update()
