@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float minSpawnPositionX = -10;
-    private float maxSpawnPositionX = 10;
+    private float minSpawnPositionX = -18;
+    private float maxSpawnPositionX = 18;
     private float SpawnPositionY = 1;
     private float SpawnPositionZ = 180;
     [SerializeField] private float startDelay = 2;

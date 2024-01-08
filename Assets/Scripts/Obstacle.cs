@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Obstacle : MoveBack // INHERITANCE
 {
-    private float zBound = -420;
+    private float zBound = -800;
     private float yBound = -10;
     private GameManager gameManager;
 

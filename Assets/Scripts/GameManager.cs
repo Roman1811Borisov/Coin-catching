@@ -11,9 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject[] gameOverMenu;
 
-    void Update()
+    void Start()
     {
-        
     }
 
     public void GameOver()
