@@ -92,9 +92,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7849223772859859724}
+  - component: {fileID: -8342621867118026175}
+  - component: {fileID: -7154251864982662392}
   m_Layer: 0
   m_Name: SilverCoin
-  m_TagString: Untagged
+  m_TagString: SilverCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,11 +109,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123262390909669985}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.769203, y: -0.009999752, z: -774.58203}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6.437861, y: 2.04, z: -679.9016}
+  m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3953969681421169357}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &-8342621867118026175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123262390909669985}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01047922, y: 0.002620646, z: 0.01067213}
+  m_Center: {x: -0.00009605369, y: 0.0009984986, z: -0.0002431182}
+--- !u!114 &-7154251864982662392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123262390909669985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7dddd9152dd4c4c94728f5847e0d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 300

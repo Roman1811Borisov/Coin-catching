@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Obstacle : MoveBack // INHERITANCE
+public class Coin : MoveBack
 {
     private float zBound = -800;
     private float yBound = -10;
