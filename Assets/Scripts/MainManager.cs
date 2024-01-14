@@ -5,7 +5,8 @@ using UnityEngine;
 public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
-    public string PlayerName { private get; set; }
+    public uint TotalMoney;
+    public string PlayerName;
 
     private void Awake()
     {

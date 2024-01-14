@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Transport : MonoBehaviour
 {
-    private MainManager mainManager;
-    [SerializeField ]protected GameManager gameManager;
+    //[SerializeField] private AudioBehaviour CoinCollectAudio;
     [SerializeField] private float xBound;
+
+    [SerializeField] protected GameManager gameManager;
     [SerializeField] protected float horizontalInput;
     [SerializeField] protected float movingSpeed;
     [SerializeField] protected uint copperScore = 1;
@@ -15,8 +16,6 @@ public class Transport : MonoBehaviour
 
     void Start()
     {
-        mainManager = GameObject.Find("Main Manager").GetComponent<MainManager>();
-        //gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -58,11 +57,24 @@ public class Transport : MonoBehaviour
             Destroy(other.gameObject);
             return;
         }
-        if (other.CompareTag("GoldenCoin"))
+        else if (other.CompareTag("GoldenCoin"))
         {
             gameManager.UpdateMoney(copperScore);
             Destroy(other.gameObject);
             return;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            gameManager.GameOver();
+        }
+
+        if (collision.gameObject.CompareTag("PartOfRoad"))
+        {
+            gameManager.IncreaseScore();
         }
     }
 }

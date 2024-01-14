@@ -8,9 +8,16 @@ using UnityEngine.UI;
 
 public class TitleScreenManager : MonoBehaviour
 {
+    private MainManager mainManager;
+
     [SerializeField] private GameObject MainMenu;
     [SerializeField] private GameObject ChoosingTransportMenu;
     [SerializeField] private TMP_InputField NameField;
+
+    private void Start()
+    {
+        mainManager = GameObject.Find("Main Manager").GetComponent<MainManager>();
+    }
 
     public void Exit()
     {
@@ -35,19 +42,13 @@ public class TitleScreenManager : MonoBehaviour
         ChoosingTransportMenu.SetActive(false);
     }
 
-    public void StartBoatGame()
+    public void StartCarGame()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void StartCarGame()
+    public void StartTankGame()
     {
         SceneManager.LoadScene(2);
     }
-
-    public void StartPlaneGame()
-    {
-        SceneManager.LoadScene(3);
-    }
-
 }

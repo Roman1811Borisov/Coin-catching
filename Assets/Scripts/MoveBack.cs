@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveBack : MonoBehaviour
 {
-    [SerializeField] private float speed = 40;
+    private float speed = 300;
 
     void Update()
     {
