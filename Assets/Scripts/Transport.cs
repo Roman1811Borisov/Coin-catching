@@ -67,14 +67,17 @@ public class Transport : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (gameManager.isGameActive)
         {
-            gameManager.GameOver();
-        }
+            if (collision.gameObject.CompareTag("Obstacle"))
+            {
+                gameManager.GameOver();
+            }
 
-        if (collision.gameObject.CompareTag("PartOfRoad"))
-        {
-            gameManager.IncreaseScore();
+            if (collision.gameObject.CompareTag("PartOfRoad"))
+            {
+                gameManager.IncreaseScore();
+            }
         }
     }
 }

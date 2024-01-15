@@ -6,7 +6,9 @@ public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
     public uint TotalMoney;
+    public uint BestScore;
     public string PlayerName;
+    public string BestPlayerName;
 
     private void Awake()
     {
